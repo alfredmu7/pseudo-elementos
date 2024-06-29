@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+h1::before{
+    content:"<<";
+    
+}
+
+h1::after{
+    content: ">>";
+}
+
+h1{
+    color: brown;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+}
+
+
+/*el pseudoelemento first-line solo se aplica a elementos en bloque*/
+h2::first-line{
+    font-weight: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(161, 103, 36);
+}
+
+h3{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/*1 y 2) pseudoelemento ::after y ::before*/
+
+.caja{
+    
+    align-items: center;
+    background-color: lightblue;
+    display: flex;
+    font-size: 20px;
+    height: 100px;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+   }
+.caja::before{
+    content: ">>";
+    color: brown;
+    font-size: 15px;
+}
+
+.caja::after{
+    content: "<<";
+    color: brown;
+    font-size: 15px;
+    
+}
+
+/*3) pseudoelemento ::first-letter*/
+
+.texto{
+    background-color: rgb(190, 190, 83);
+    width: 420px;
+}
+.texto::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d9534f;   
+    
+}
+
+/*4) pseudoelemento ::first-line*/
+.texto-dos::first-line{
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform:uppercase ;
+    background-color: #f0f0f0;
+}
+
+/*5) pseudoelemento ::selection*/
+
+.texto-tres{
+    font-size: 20px;
+}
+.texto-tres::selection {
+    color: #fa0505;
+    
+}
+
+/*6) pseudoelemento ::backdrop*/
+
+dialog {
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/*7) pseudoelemento ::placeholder*/
+
+.input-field {
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.input-field::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/*8) pseudoelemento ::marker*/
+
+ul.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.custom-list li {
+    margin: 1px 15px;
+    font-size: 18px;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul.custom-list li::marker {
+    content: '★';
+    color: #ff6347;
+    font-size: 20px;
+    position: absolute;
+    
+}
+
+/*9) pseudoelemento ::spelling-error*/
+/*al seleccionar "inspeccionar" creo que este pseudoelemento es experimental y 
+aun no es compatible, porque este detecta un error en su ejecucion*/
+
+.experimental1::after{
+    content: "☢";
+    color: goldenrod;
+    
+
+}
+
+.experimental2::after{
+    content: "☢";
+    color: goldenrod;
+}
+
+.texto-error {
+    font-size: 15px;
+    color: #333;
+}
+
+.texto-error::spelling-error {
+    background-color: #b80f20;
+    color: red;
+    text-decoration: underline;
+}
+
+/*10) pseudoelemento ::grammar-error*/
+/*al igual que ::spelling-error: al seleccionar "inspeccionar" creo que este pseudoelemento es experimental y 
+aun no es compatible, porque este detecta un error en su ejecucion*/
+
+
+.texto-grammar-error {
+    font-size: 15px;
+    color: gray;
+}
+
+.texto-grammar-error::grammar-error {
+    background-color: #ffcccb;
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+

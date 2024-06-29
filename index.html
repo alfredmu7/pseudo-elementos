@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>titulo principal</h1>
+        <h2>titulo secundario</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Ipsum magni, quibusdam aut sed vel voluptatibus quod quam
+    at distinctio recusandae. Aliquid adipisci voluptatum vel
+    vero obcaecati tenetur, exercitationem repellat esse.
+</p>
+<span>Lorem, ipsum dolor sit amet consectetur adipisicing 
+    elit. Voluptatibus iste obcaecati ratione. Omnis quidem 
+    possimus deserunt totam in dolorum reiciendis nemo odit!
+    ommodi, architecto? Quibusdam similique aliquam repudiandae odio molestias!
+
+</span>
+
+    </header>
+<hr>
+
+    <h1>pseudo elementos</h1>
+    <h3>::after y ::before</h3>
+    <p> Son comunmente usados para añadir contenido cosmético a un elemento .</p>
+
+    <div class="caja">Contenido principal</div>
+
+    <hr>
+
+    <h3>::first-letter</h3>
+    <p>aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas). </p>
+
+    <p class="texto">
+        Este es el parrafo que se tomara de ejemplo para usar el pseudoelemento.
+    </p>
+
+    <hr>
+    <h3>::first-line</h3>
+    <p>aplica estilos a la primera línea de un elemento de bloque.</p>
+
+    <p class="texto-dos">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod lectus nec lectus suscipit, nec pharetra justo tempor. Nullam viverra dictum sapien, at tincidunt sapien pharetra non. Integer eget lectus nec lorem feugiat fermentum ac eget arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Donec at cursus neque. Aliquam erat volutpat.
+    </p>
+    <hr>
+
+    <h3>:selection</h3>
+    <p>aplica estilos a la parte de un documento que ha sido resaltada por el usuario (como hacer clic y arrastrar el ratón sobre el texto).</p>
+    
+    <p class="texto-tres">
+        texto que se utilizara de ejemplo para este pseudoelemento. </p>    
+
+
+    <hr>
+
+    <h3>::backdrop</h3>
+    <p>Este pseudo-elemento es una caja que se muestra inmediatamente debajo del elemento (y sobre el elemento inmediatamente inferior de la pila, si es que hay), dentro de dicha capa superior.</p>
+
+    <button id="open-dialog">para abrir se necesita usar .js</button>
+
+    <dialog id="myDialog">
+        <p>Este es un cuadro de diálogo modal.</p>
+        <button id="close-dialog">Cerrar</button>
+    </dialog>
+
+    <hr>
+
+    <h3>::placeholder</h3>
+    <p>te permite añadir el texto provisional en un elemento input</p>
+
+
+    <div class="input-container">
+        <input type="text" class="input-field" placeholder="Write here...">
+        
+    </div>
+
+    <hr>
+
+    <h3>::marker</h3>
+    <p>muestra cómo personalizar los marcadores de una lista, lo que puede ser útil para crear listas más atractivas y alineadas con el diseño de tu sitio web.</p>    
+
+    <ul class="custom-list">
+        <li>Elemento de la lista uno</li>
+        <li>Elemento de la lista dos</li>
+        <li>Elemento de la lista tres</li>
+        <li>Elemento de la lista cuatro</li>
+    </ul>
+
+    <hr>
+    <h3 class="experimental1">::spelling-error</h3>
+    <p>se pueden aplicar estilos como color de fondo, color de texto, subrayado adicional, entre otros, para resaltar visualmente los errores ortográficos de manera personalizada.</p>
+
+    <div class="contenedor">
+        <p class="texto-error">Este es un ejmplo de texo con error.</p>
+    </div>
+
+    <hr>
+
+    <h3 class="experimental2">::grammar-error</h3>
+    <p>pero se utiliza para estilizar partes del texto marcadas como errores gramaticales por el navegador.</p>
+
+    <div class="contenedor-dos">
+        <p class="texto-grammar-error">Este es un ejmplo de texo con error.</p>
+    </div>
+    
+    
+
+
+
+
+
+
+    
+</body>
+</html>
